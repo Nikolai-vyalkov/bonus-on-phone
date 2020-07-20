@@ -1,15 +1,13 @@
-public class Main{
-    public static void main(String[] args) {
-        boolean balance = true;
-        int percent;
-        if (balance) {
-        percent = 1;
-        } else {
-            percent = 0;
+public class Main {
+     public static void main(String[] args) {
+        int originbalance = 100;
+        int incomingbalance = 1299;
+        double bonus = 0;
+        if (incomingbalance >= 1100) {
+            bonus = Math.floor(incomingbalance / 100);
         }
-        int amout = 1200;
-        long bonus = (amout * percent) / 100;
-        System.out.print(bonus);
 
+         System.out.println("Итоговая сумма " + (originbalance + incomingbalance + bonus));
+         System.out.println("Сумма бонуса " + bonus);
     }
 }
